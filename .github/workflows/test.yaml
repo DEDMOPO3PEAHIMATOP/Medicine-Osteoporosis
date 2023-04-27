@@ -20,6 +20,8 @@ jobs:
       - name:
         run: echo "Starting linters..."
         run: pip install flake8
-        run: coverage run flake main.py
+        run: coverage run flake src/data/EDA.py
+        run: coverage run flake src/data/Modelling.py
+        run: coverage run flake src/data/preprocessingS.py
       - name: Tests report
         run: coverage report
