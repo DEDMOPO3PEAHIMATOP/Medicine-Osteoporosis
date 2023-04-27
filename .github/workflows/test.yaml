@@ -13,15 +13,22 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Чекаутим код
+      - uses: actions/checkout@master
+      # Устанавливаем python нужной версии
+      - uses: actions/setup-python@v1
+        with:
+          python-version: '3.8'
+          architecture: 'x64'
       # Runs a single command using the runners shell
       - name: Install requirements
-        run: echo "Installing packages..."
-        run: pip install -r requirements.txt
-      - name:
-        run: echo "Starting linters..."
-        run: pip install flake8
-        run: run flake src/data/EDA.py
-        run: run flake src/data/Modelling.py
-        run: run flake src/data/preprocessingS.py
+      - run: echo "Installing packages..."
+      - run: pip install -r requirements.txt
+      - name: Starting testing
+      - run: echo "Starting linters..."
+      - run: pip install flake8
+      - run: run flake src/data/EDA.py
+      - run: run flake src/data/Modelling.py
+      - run: run flake src/data/preprocessing.py
       - name: Tests report
-        run: coverage report
+      - run: coverage report
