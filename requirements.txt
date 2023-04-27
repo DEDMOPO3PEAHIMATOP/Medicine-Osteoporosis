@@ -2,6 +2,10 @@
 -e .
 
 # external requirements
+openpyxl
+pandas
+scikit-learn
+catboost
 click
 Sphinx
 coverage

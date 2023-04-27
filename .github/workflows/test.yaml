@@ -1,5 +1,10 @@
 name: Test workflow
 
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+
+
 jobs:
   # This workflow contains a single job called "greet"
   greet:
@@ -9,9 +14,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Runs a single command using the runners shell
-      - name: Send greeting
+      - name: Install requirements
         run: echo "Installing packages..."
-        run: build
+        run: pip install -r requirements.txt
+      - name:
         run: echo "Starting linters..."
         run: pip install flake8
-        run: flake main.py
+        run: coverage run flake main.py
+      - name: Tests report
+        run: coverage report
