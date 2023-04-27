@@ -1,20 +1,17 @@
-image: python:3.10
+name: Test workflow
 
-stages:
-  - build
-  - test
+jobs:
+  # This workflow contains a single job called "greet"
+  greet:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
-before_script:
-  - python --version
-
-build-job:
-  stage: build
-  script:
-    - echo "Installing packages..."
-
-lintest:
-  stage: test
-  script:
-    - echo "Starting linters..."
-    - pip install flake8
-    - flake main.py
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Runs a single command using the runners shell
+      - name: Send greeting
+        run: echo "Installing packages..."
+        run: build
+        run: echo "Starting linters..."
+        run: pip install flake8
+        run: flake main.py
