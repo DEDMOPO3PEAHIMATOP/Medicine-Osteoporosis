@@ -1,0 +1,28 @@
+Index: .github/workflows/test.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>name: Test workflow\n\non:\n  workflow_dispatch:\n    # Inputs the workflow accepts.\n\n\njobs:\n  # This workflow contains a single job called \"greet\"\n  greet:\n    # The type of runner that the job will run on\n    runs-on: ubuntu-latest\n\n    # Steps represent a sequence of tasks that will be executed as part of the job\n    steps:\n      # Runs a single command using the runners shell\n      - name: Install requirements\n      - run: echo \"Installing packages...\"\n      - run: pip install -r requirements.txt\n      - name:\n      - run: echo \"Starting linters...\"\n      - run: pip install flake8\n      - run: run flake src/data/EDA.py\n      - run: run flake src/data/Modelling.py\n      - run: run flake src/data/preprocessingS.py\n      - name: Tests report\n      - run: coverage report\n
+===================================================================
+diff --git a/.github/workflows/test.yaml b/.github/workflows/test.yaml
+--- a/.github/workflows/test.yaml	
++++ b/.github/workflows/test.yaml	
+@@ -17,11 +17,11 @@
+       - name: Install requirements
+       - run: echo "Installing packages..."
+       - run: pip install -r requirements.txt
+-      - name:
+-      - run: echo "Starting linters..."
+-      - run: pip install flake8
+-      - run: run flake src/data/EDA.py
+-      - run: run flake src/data/Modelling.py
+-      - run: run flake src/data/preprocessingS.py
+-      - name: Tests report
+-      - run: coverage report
++#      - name:
++#      - run: echo "Starting linters..."
++#      - run: pip install flake8
++#      - run: run flake src/data/EDA.py
++#      - run: run flake src/data/Modelling.py
++#      - run: run flake src/data/preprocessingS.py
++#      - name: Tests report
++#      - run: coverage report
