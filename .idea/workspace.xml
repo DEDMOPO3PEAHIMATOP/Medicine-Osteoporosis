@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dc1c731-1c7f-491a-94b5-5a4ea614691f" name="Changes" comment="Initial init2" />
+    <list default="true" id="5dc1c731-1c7f-491a-94b5-5a4ea614691f" name="Changes" comment="Add data/external data/processed">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/manual.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/manual.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,12 +50,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/ssp/Документы/Учеба/ODS_AI/MLOps2/osteoporosis",
+    "last_opened_file_path": "/home/ssp/Документы/Учеба/ODS_AI/MLOps2/osteoporosis/data",
     "settings.editor.selected.configurable": "me.lensvol.blackconnect.settings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/data" />
       <recent name="$PROJECT_DIR$/notebooks" />
@@ -138,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682661359442</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Create cookiecutter">
+      <created>1682661691847</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682661691847</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add data/external data/processed">
+      <created>1682661777069</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682661777069</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +189,8 @@
     <MESSAGE value="Add test.yaml reformated" />
     <MESSAGE value="Refactor test.yaml" />
     <MESSAGE value="Initial init2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial init2" />
+    <MESSAGE value="Create cookiecutter" />
+    <MESSAGE value="Add data/external data/processed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add data/external data/processed" />
   </component>
 </project>
