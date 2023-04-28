@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dc1c731-1c7f-491a-94b5-5a4ea614691f" name="Changes" comment="Refactor test.yaml" />
+    <list default="true" id="5dc1c731-1c7f-491a-94b5-5a4ea614691f" name="Changes" comment="Initial init2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682659425683</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Initial init2">
+      <created>1682661359442</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682661359442</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +170,7 @@
     <MESSAGE value="Add test.yaml" />
     <MESSAGE value="Add test.yaml reformated" />
     <MESSAGE value="Refactor test.yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor test.yaml" />
+    <MESSAGE value="Initial init2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial init2" />
   </component>
 </project>
